@@ -47,7 +47,7 @@ function handleRemoveTask(id: number) {
 
 - Marcar e desmarcar uma tarefa como concluída
 
-function handleToggleTaskCompletion(id: number) {
+ function handleToggleTaskCompletion(id: number) {
 
 // Mapeia todas as tarefa
 // Verifica se na tarefa clicada o isComplete está setado como false
@@ -65,4 +65,4 @@ function handleToggleTaskCompletion(id: number) {
     );
 
     setTasks(newTasks);
-}
+ }
