@@ -10,20 +10,24 @@ Essa será uma aplicação onde o seu principal objetivo é uma pequena aplic
 
 - Adicionar uma nova tarefa
 
-// Se o input estiver vazio, impedir o envio da nova tarefa. <br/>
+- Se o input estiver vazio, impedir o envio da nova tarefa. <br/>
+
     if (!newTaskTitle) return;
 
-// Nova tarefa recebe uma ID random e inicia o isComplete como false  <br/>
+- Nova tarefa recebe uma ID random e inicia o isComplete como false  <br/>
+
     const newTask = {
       id: Math.random(),
       title: newTaskTitle,
       isComplete: false,
     };
 
-// Recebo o valor do input e insiro na lista  <br/>
+- Recebo o valor do input e insiro na lista  <br/>
+
     setTasks((oldState) => [...oldState, newTask]);
 
-// Reseto o valor inserido no input  <br/>    
+- Reseto o valor inserido no input  <br/>    
+
     setNewTaskTitle("");
 
 
